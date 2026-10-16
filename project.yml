@@ -1,0 +1,31 @@
+name: Nelo
+options:
+  bundleIdPrefix: com.nelo
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Nelo:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nelo.schedule
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_VERSION: "5.0"
+    info:
+      path: Support/Info.plist
+      properties:
+        CFBundleDisplayName: Nelo
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSCalendarsUsageDescription: Nelo can add your events to the Calendar app on this iPhone.
+        NSCalendarsWriteOnlyAccessUsageDescription: Nelo can add your events to the Calendar app on this iPhone.
+        NSCalendarsFullAccessUsageDescription: Nelo can add your events to the Calendar app on this iPhone.
